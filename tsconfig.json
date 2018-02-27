@@ -8,6 +8,7 @@
     "outDir": "build",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "sourceMap": true,
     "strict": true,
     "typeRoots": [
       "./node_modules/@types",

@@ -9,7 +9,10 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
+        options:{
+          transpileOnly: true
+        },
         exclude: /node_modules/
       }
     ]
@@ -26,6 +29,7 @@ module.exports = {
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
+  devtool: "inline-source-map",
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
