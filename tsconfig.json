@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es6",
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "outDir": "build",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
